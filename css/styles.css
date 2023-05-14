@@ -107,6 +107,22 @@ body {
 
 /*=================Header============================*/
 
+.menu-item {
+  display: flex;
+  position: relative;
+}
+
+.current::after {
+  position: absolute;
+  top: 69px;
+  content: '';
+  display: block;
+  background: #404bbf;
+  height: 4px;
+  border-radius: 2px;
+  width: 100%;
+}
+
 .e-mail::before {
   content: '';
 }
@@ -263,6 +279,7 @@ body {
 .hero-btn:focus {
   background: var(--accent-color);
   color: #ffffff;
+  transform: translate(1000ms cubic-bezier(0.4, 0, 0.2, 1));
 }
 
 /*=================Hero============================*/
@@ -326,6 +343,7 @@ body {
 .social-list-link:hover,
 .social-list-link:focus {
   background-color: #404bbf;
+  transform: translate(1000ms cubic-bezier(0.4, 0, 0.2, 1));
 }
 
 .social-list-link {
@@ -412,6 +430,7 @@ body {
 .customers-link:focus {
   border-color: #404bbf;
   color: #404bbf;
+  transform: translate(1000ms cubic-bezier(0.4, 0, 0.2, 1));
 }
 
 /*================= Customers ========================*/
@@ -451,6 +470,7 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   color: #ffffff;
+  transform: translate(1000ms cubic-bezier(0.4, 0, 0.2, 1));
 }
 
 /*=================Filters==========================*/
@@ -461,6 +481,7 @@ body {
 .portfolio-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transform: translate(1000ms cubic-bezier(0.4, 0, 0.2, 1));
 }
 
 .portfolio-link {
@@ -523,6 +544,7 @@ body {
 .social-list-footer-link:hover,
 .social-list-footer-link:focus {
   background-color: #31d0aa;
+  transform: translate(1000ms cubic-bezier(0.4, 0, 0.2, 1));
 }
 
 .footer-right-side-title {
