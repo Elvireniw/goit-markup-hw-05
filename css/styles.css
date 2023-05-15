@@ -107,17 +107,6 @@ body {
 
 /*=================Header============================*/
 
-.current::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  height: 4px;
-  background-color: #404bbf;
-  border-radius: 2px;
-  width: 100%;
-}
-
 .header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -175,11 +164,25 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #404bbf;
   color: var(--primary-text-color);
   display: block;
   padding: 24px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.current {
+  color: #404bbf;
+}
+
+.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  width: 100%;
 }
 
 .menu-link:hover,
@@ -479,6 +482,7 @@ body {
 .portfolio-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transform: translateY(0%);
 }
 
 .portfolio {
@@ -620,7 +624,7 @@ body {
 }
 
 .portfolio-link:hover .overlay,
-.portfolio-link:focus {
+.portfolio-link:focus .overlay {
   transform: translateY(0%);
 }
 
@@ -688,6 +692,6 @@ body {
 }
 
 .modal-close-btn:hover .modal-close-icon,
-.modal-close-icon .modal-close-btn:focus {
+.modal-close-btn:focus .modal-close-icon {
   fill: #ffffff;
 }
