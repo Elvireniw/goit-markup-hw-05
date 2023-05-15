@@ -190,7 +190,8 @@ body {
 }
 
 .menu-link:hover,
-.menu-link:focus {
+.menu-link:focus,
+.menu-link:active {
   color: var(--accent-color);
 }
 
